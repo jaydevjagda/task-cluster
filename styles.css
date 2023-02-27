@@ -1,0 +1,151 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navF {
+    font-family: 'Playfair Display',;
+}
+
+.imgContent {
+    background-color: #E7F2ED;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.vl {
+    border-left: 1px solid #D0D0A7;
+    height: 500px;
+}
+
+
+
+.textInfo {
+    font-family: 'Playfair Display', serif;
+    background-color: #E7F2ED;
+}
+
+.condimentumInfo
+{
+    background: #F2F2E6;
+
+}
+
+@media (max-width:639px) {
+
+    .cardS {
+        display: flex;
+        overflow: scroll;
+        gap: 20px;
+    }
+
+
+
+}
+
+.centered {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.interior {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+
+}
+
+.img1 {
+    height: 225px;
+}
+
+.photography {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.animal {
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.centerInfo {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.recent
+{
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.work
+{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.expBtn
+{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* card border three cards testimonial */
+
+.cardBorder
+{
+    border: 1px solid #D0D0A7 ;
+}
+
+.cardImgBorder
+{
+    border: 3px solid #D0D0A7 ;
+    border-radius:50px;
+}
+
+.cardOneImg
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* carosalSection section background */
+
+.carosalSection
+{
+    background: #E7F2ED;
+
+}
+
+/* drag here box */
+.boxSection
+{
+    border: 3px dotted black;
+}

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- site html and tailwind classes -->
+    <!-- navbar -->
+    <nav class=" bg-white  navF relative flex  items-center justify-between  py-4 shadow-md shadow-black/5   dark:shadow-black/10 lg:flex-wrap lg:justify-start w-full"
+        data-te-navbar-ref>
+        <div class="flex w-full flex-wrap items-center justify-between px-6">
+            <button
+                class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="[&>svg]:w-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+            <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+                id="navbarSupportedContent1" data-te-collapse-item>
+                <div class="grid lg:grid-cols-2 ">
+                    <div class="logoImg">
+                        <a class="mt-2 mr-3flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
+                            href="#">
+                            <img src="images/hau_gitschberge_horizontal 1.png" style="height: 70px" alt=""
+                                loading="lazy" class="ml-52" />
+                        </a>
+                    </div>
+                    <!-- Left links -->
+                    <div class="ulList p-6">
+                        <ul class="list-style-none  flex  pl-0  lg:flex-row" data-te-navbar-nav-ref>
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <a class="text-black" href="#" data-te-nav-link-ref>HOME</a>
+                            </li>
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <!-- dropdown button -->
+                                <div class="flex justify-center">
+                                    <div>
+                                        <div class="relative" data-te-dropdown-position="dropup">
+                                            <a class=" flex items-center whitespace-nowrap rounded bg-none px-6  text- font-medium uppercase leading-normal text-black"
+                                                type="" id="dropdownMenuButton1u" data-te-dropdown-toggle-ref
+                                                aria-expanded="false" data-te-ripple-init data-te-ripple-color="light">
+                                                Blog
+                                                <span class="ml-2 w-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                        fill="currentColor" class="h-5 w-5">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                                                aria-labelledby="dropdownMenuButton1u" data-te-dropdown-menu-ref>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Another action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dropdoe end 1 -->
+                            </li>
+                            <!-- second drop down -->
+                            <div class="flex justify-center">
+                                <div>
+                                    <div class="relative" data-te-dropdown-position="dropup">
+                                        <a class=" flex items-center whitespace-nowrap rounded bg-none px-6   font-medium uppercase leading-normal text-black"
+                                            type="" id="dropdownMenuButton1u" data-te-dropdown-toggle-ref
+                                            aria-expanded="false" data-te-ripple-init data-te-ripple-color="light">
+                                            FEATURE
+                                            <span class="ml-2 w-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                    fill="currentColor" class="h-5 w-5">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                                            aria-labelledby="dropdownMenuButton1u" data-te-dropdown-menu-ref>
+                                            <li>
+                                                <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                    href="#" data-te-dropdown-item-ref>Action</a>
+                                            </li>
+                                            <li>
+                                                <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                    href="#" data-te-dropdown-item-ref>Another action</a>
+                                            </li>
+                                            <li>
+                                                <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                    href="#" data-te-dropdown-item-ref>Something else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end here -->
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <!-- third drop down -->
+                                <div class="flex justify-center">
+                                    <div>
+                                        <div class="relative" data-te-dropdown-position="dropup">
+                                            <a class=" flex items-center whitespace-nowrap rounded bg-none px-6   font-medium uppercase leading-normal text-black"
+                                                type="" id="dropdownMenuButton1u" data-te-dropdown-toggle-ref
+                                                aria-expanded="false" data-te-ripple-init data-te-ripple-color="light">
+                                                CATEGORIES
+                                                <span class="ml-2 w-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                        fill="currentColor" class="h-5 w-5">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                                                aria-labelledby="dropdownMenuButton1u" data-te-dropdown-menu-ref>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Another action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end here third drop down -->
+                            </li>
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <a class="text-black hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                                    href="#" data-te-nav-link-ref>ABOUT</a>
+                            </li>
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <a class="text-black hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                                    href="#" data-te-nav-link-ref>CONTACT</a>
+                            </li>
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <!-- forth drop down -->
+                                <div class="flex justify-center">
+                                    <div>
+                                        <div class="relative" data-te-dropdown-position="dropup">
+                                            <a class=" flex items-center whitespace-nowrap rounded bg-none px-6  font-medium uppercase leading-normal text-black"
+                                                type="" id="dropdownMenuButton1u" data-te-dropdown-toggle-ref
+                                                aria-expanded="false" data-te-ripple-init data-te-ripple-color="light">
+                                                Blog
+                                                <span class="ml-2 w-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                        fill="currentColor" class="h-5 w-5">
+                                                        <path fill-rule="evenodd"
+                                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                                                aria-labelledby="dropdownMenuButton1u" data-te-dropdown-menu-ref>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Another action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                                        href="#" data-te-dropdown-item-ref>Something else here</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end here -->
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    toggle_off
+                                    </span>
+                            </li>
+                            <!-- <li class="lg:pr-2" data-te-nav-item-ref>
+                                <a class="text-black hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                                    href="#" data-te-nav-link-ref>PORTFOLIO</a>
+                            </li>
+                            <li class="lg:pr-2" data-te-nav-item-ref>
+                                <img src="images/Rectangle 100.png" alt="" class="h-7 w-15">
+                                <img src="images/Vector.png" alt="" srcset="" class="absolute top-10 h-5">
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <!-- Right elements -->
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- info and img parent div -->
+    <div class="imgContent">
+        <!-- image section -->
+        <div class="flex justify-center imgSection">
+            <div class="lg:grid grid-cols-3 md:grid sm:grid xs:grid cardS mx-auto">
+                <img src="images/Rectangle 65.png" class="" alt="">
+                <img src="images/Rectangle 66.png" class="" alt="">
+                <img src="images/Rectangle 67.png" class="" alt="">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 mt-20 p-20">
+            <div class="textInfo">
+                <p class="text-center font-semibold">HEY THERE</p>
+                <p class="text-center text-5xl mt-4 font-extrabold">I'm Haus</p>
+                <p class="text-center mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas hic
+                    adipisci accusamus exercitationem eligendi laudantium nostrum temporibus! Expedita, porro quidem
+                    quaerat excepturi officiis atque repudiandae eaque corrupti? Rem rerum, totam fuga velit quibusdam
+                    quod magnam eum eaque, accusamus nobis illum unde nostrum qui repellat modi cumque nulla maxime.
+                    Omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non iste velit minus veniam
+                    similique optio ipsum ad maiores, dolores est?</p>
+                <div class="text-center">
+                    <button class=" mt-7 border p-2 -tracking-tighter   border-green-500 hover:bg-green-700">READ THE
+                        WHOLE STORY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- condimentum section -->
+
+    <div class="flex justify-evenly flex-wrap p-20 condimentumInfo">
+        <img src="images/Rectangle 65 (1).png" class="h-80" alt="">
+        <div class="vl hidden lg:hidden md:hidden xl:block sm:hidden">
+
+        </div>
+        <div class="condimentumInfo">
+            <p class="text-4xl break-words mt-7">Condimentum Magna Vel Sodales Mollis Nisl Nibh Ornare Eros</p>
+            <p class="mt-4">Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus.
+                Aenean vitae arcu auctor, imperdiet nisl quis interdum lacus.</p>
+            <button class="mt-7 border border-green-700 tracking-wider p-3">
+                GET STARTED
+            </button>
+        </div>
+    </div>
+
+    <!-- view recent work section -->
+    <div class="flex justify-around flex-wrap relative arch p-20">
+        <p class="centered text-black bg-white p-3">ARCHITETCTURE</p>
+        <p class="interior bg-white text-black p-3">INTERIOR</p>
+        <p class="centerInfo text-3xl">THE PORTFOLIO</p>
+        <p class="view text-3xl ">VIEW</p>
+        <p class="recent text-3xl">RECENT</p>
+        <p class="work text-3xl">WORK</p>
+        <button class="expBtn text-2xl border border-">EXPLORE</button>
+        <img src="images/20 22.png " class="img1" alt="">
+        <img src="images/21 1.png" alt="" class="img1">
+    </div>
+
+    <div class="flex justify-around relative fle mt-24 flex-wrap">
+        <p class="photography bg-white text-black p-3">PHOTOGRAPHY</p>
+        <p class="animal bg-white text-black p-4">ANIMAL</p>
+        <img src="images/7 1.png" class="img1" alt="">
+        <img src="images/22 1.png" class="img1" alt="">
+    </div>
+
+    <!-- making for div with grid -->
+    <!-- <div class="grid lg:grid-cols-2 m-auto md:grid-cols-2 ">
+        <p class="photography bg-white text-black p-3">PHOTOGRAPHY</p>
+        <p class="animal bg-white text-black p-4">ANIMAL</p>
+        <div>
+            <img src="images/7 1.png" class="img1 md:h-40 lg:h-56" alt="">
+        </div>
+        <div>
+            <img src="images/22 1.png" class="img1 md:h-40 lg:h-60 " alt="">
+        </div>
+    </div> -->
+
+    <div class="flex justify-evenly flex-wrap p-28 ">
+        <div class="toolCreativ">
+            <p class="text-4xl">Tools For Creative</p>
+            <p class="lg:w-96 mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis,
+                pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <img src="images/23.png" alt="" class="lg:h-96" srcset="">
+        <img src="images/24.png" alt="" srcset="" class="lg:h-96">
+    </div>
+
+    <!-- three card -->
+    <div class="grid gap-6 text-center p-28 md:grid-cols-3">
+        <!-- first card -->
+        <div>
+            <div class=" block rounded-lg bg-white shadow-lg cardBorder relative" style="height: 16rem;">
+                <div class="h-28  rounded-t-lg">
+                    <div class="p-6 ">
+                        <p class="mb-4 text-2xl text-black">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet,
+                            consectetur.”</p>
+                    </div>
+                </div>
+
+                <div class="mx-auto w-24 overflow-hidden rounded-full">
+                    <img src="images/Ellipse 10.png" class="cardOneImg cardImgBorder" />
+                </div>
+            </div>
+        </div>
+        <!-- first end -->
+        <!-- second card -->
+        <div>
+            <div class="block rounded-lg bg-white shadow-lg cardBorder relative" style="height: 16rem;">
+                <div class="h-28  rounded-t-lg">
+                    <div class="p-6 ">
+                        <p class="mb-4 text-2xl text-black">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.”</p>
+                    </div>
+                </div>
+
+                <div class="mx-auto  w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                    <img src="images/Ellipse 10 (1).png" class="cardOneImg cardImgBorder" />
+                </div>
+            </div>
+        </div>
+
+        <!-- third card -->
+        <div>
+            <div class="block rounded-lg bg-white shadow-lg cardBorder relative" style="height: 16rem;">
+                <div class="h-28  rounded-t-lg">
+                    <div class="p-6">
+                        <p class="mb-4 text-2xl text-black">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut tempor interdum ipsum, non finibus libero. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.”</p>
+                    </div>
+                </div>
+
+                <div class="mx-auto  w-24 overflow-hidden rounded-full">
+                    <img src="images/Ellipse 10 (2).png" class="cardOneImg cardImgBorder" />
+                </div>
+            </div>
+        </div>
+
+        <!-- third end here -->
+    </div>
+    </section>
+
+    <!-- cars crosal section  -->
+    <section class="flex justify-center bg-[
+    #E7F2ED] carosalSection">
+        <div id="carouselExampleControls" class="relative m-auto" data-te-carousel-init data-te-carousel-slide
+            style="width: 70rem;">
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item data-te-carousel-active>
+                    <img src="images/3.png" class="block" alt="Wild Landscape" />
+                </div>
+                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item>
+                    <img src="images/26.png" class="block" alt="Camera" />
+                </div>
+                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item>
+                    <img src="images/3.png" class="block " alt="Exotic Fruits" />
+                </div>
+            </div>
+            <button
+                class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button" data-te-target="#carouselExampleControls" data-te-slide="prev">
+                <span class="inline-block h-8 w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </span>
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+            </button>
+            <button
+                class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button" data-te-target="#carouselExampleControls" data-te-slide="next">
+                <span class="inline-block h-8 w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </span>
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- life style travel photos section -->
+    <section class="mt-28  flex flex-col">
+        <!-- headinf div -->
+        <div class="threeHeading flex gap-24 ml-72">
+            <div class=" border-b-cyan-400">
+                <p class="text-3xl">Lifestyle</p>
+            </div>
+            <div>
+                <p class="text-3xl">Travel</p>
+            </div>
+            <div class="boeder">
+                <p class="text-3xl">Photos</p>
+            </div>
+        </div>
+        <div >
+            <p class="ml-72 mt-8 border p-7 border-[#0B8497]" style="width: 61rem;"><span class="text-4xl">L</span>orem ipsum dolor sit amet,
+                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+                pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, Pulvinar dapibus leo.</p>
+        </div>
+    </section>
+
+    <!-- collaborate section -->
+
+    <section class="mt-28 bg-[#E7F2ED]">
+        <h2 class="flex justify-center text-4xl p-7">Lets Collaborate Together</h2>
+        <div class="flex justify-center mt-12 gap-16">
+            <div>
+                <p style="width: 15rem;">What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+            <div>
+                <p style="width: 15rem;">It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining
+                    essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing </p>
+            </div>
+            <div>
+                <p style="width: 15rem;">software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of</p>
+            </div>
+            <div>
+                <p style="width: 15rem;"> letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- recent post cards -->
+    <section class="mt-32">
+        <div class="text-center">
+            <p class="text-4xl">Recent Posts</p>
+        </div>
+        <!-- first card -->
+        <div class="firstCardRow flex justify-center gap-28 flex-wrap mt-20">
+            <div class="cardSectionFirst border ">
+                <div class="flex" style="width: 22rem;">
+                    <div class="block max-w-sm rounded-lg bg-white">
+                        <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                            <img class="rounded-t-lg" src="images/17 2.png" alt="" />
+                        </a>
+                        <div class="p-6">
+                            <p class="text-black text-center">PHOTO</p>
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-black">
+                                Little Known Ways To Rid YourSelf
+                            </h5>
+                            <p class="mb-4 text-center text-base text-black">
+                                June 20,2021
+                            </p>
+                            <hr />
+                            <p class="mb-4 text-center text-base text-black">
+                                Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks
+                                to
+                                the most high. In life there will be road blocks but we will over come...
+                            </p>
+                            <div class="flex justify-center">
+                                <button class="text-black tracking-wider border border-x-yellow-200 p-2">
+                                    <p>Read More</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second Card -->
+            <div class="cardSectionFirst border">
+                <div class="flex" style="width: 22rem;">
+                    <div class="block max-w-sm rounded-lg bg-white">
+                        <div class="p-6">
+                            <p class="text-black text-center">PHOTO</p>
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-black">
+                                Little Known Ways To Rid YourSelf
+                            </h5>
+                            <p class="mb-4 text-center text-base text-black">
+                                June 20,2021
+                            </p>
+                            <hr />
+                            <p class="mb-4 text-center text-base text-black">
+                                Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks
+                                to
+                                the most high. In life there will be road blocks but we will over come...
+                            </p>
+                            <div class="flex justify-center">
+                                <button class="text-black tracking-wider border border-x-yellow-200 p-2">
+                                    <p>Read More</p>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                            <img class="rounded-t-lg" src="images/17 2.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="cardSectionFirst border">
+                <div class="flex" style="width: 22rem;">
+                    <div class="block max-w-sm rounded-lg bg-white">
+                        <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                            <img class="rounded-t-lg" src="images/17 2.png" alt="" />
+                        </a>
+                        <div class="p-6">
+                            <p class="text-black text-center">PHOTO</p>
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-black">
+                                Little Known Ways To Rid YourSelf
+                            </h5>
+                            <p class="mb-4 text-center text-base text-black">
+                                June 20,2021
+                            </p>
+                            <hr />
+                            <p class="mb-4 text-center text-base text-black">
+                                Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give thanks
+                                to
+                                the most high. In life there will be road blocks but we will over come...
+                            </p>
+                            <div class="flex justify-center">
+                                <button class="text-black tracking-wider border border-x-yellow-200 p-2">
+                                    <p>Read More</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="flex justify-center mt-10">
+        <div class="firstCardRow flex justify-center gap-28 flex-wrap ">
+            <!-- first card -->
+            <div class="firstCardRow flex justify-center gap-28 flex-wrap">
+                <div class="cardSectionFirst border ">
+                    <div class="flex" style="width: 22rem;">
+                        <div class="block max-w-sm rounded-lg bg-white">
+                            <p class="text-black text-center text-xs mt-3">PHOTO</p>
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-black text-center mt-4">
+                                Little Known Ways To Rid YourSelf
+                            </h5>
+                            <p class="mb-4 text-center text-base text-black">
+                                June 20,2021
+                            </p>
+                            <hr />
+                            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                                <img class="rounded-t-lg" src="images/17 2.png" alt="" />
+                            </a>
+                            <div class="p-6">
+
+                                <p class="mb-4 text-center text-base text-black">
+                                    Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give
+                                    thanks
+                                    to
+                                    the most high. In life there will be road blocks but we will over come...
+                                </p>
+                                <div class="flex justify-center">
+                                    <button class="text-black tracking-wider border border-x-yellow-200 p-2">
+                                        <p>Read More</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="firstCardRow flex justify-center gap-28 flex-wrap">
+                <div class="cardSectionFirst border ">
+                    <div class="flex" style="width: 22rem;">
+                        <div class="block max-w-sm rounded-lg bg-white">
+                            <p class="text-black text-center text-xs mt-3">PHOTO</p>
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-black text-center mt-4">
+                                Little Known Ways To Rid YourSelf
+                            </h5>
+                            <p class="mb-4 text-center text-base text-black">
+                                June 20,2021
+                            </p>
+                            <hr />
+                            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                                <img class="rounded-t-lg" src="images/17 2.png" alt="" />
+                            </a>
+                            <div class="p-6">
+
+                                <p class="mb-4 text-center text-base text-black">
+                                    Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give
+                                    thanks
+                                    to
+                                    the most high. In life there will be road blocks but we will over come...
+                                </p>
+                                <div class="flex justify-center">
+                                    <button class="text-black tracking-wider border border-x-yellow-200 p-2">
+                                        <p>Read More</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="firstCardRow flex justify-center gap-28 flex-wrap">
+                <div class="cardSectionFirst border ">
+                    <div class="flex" style="width: 22rem;">
+                        <div class="block max-w-sm rounded-lg bg-white">
+                            <p class="text-black text-center text-xs mt-3">PHOTO</p>
+                            <h5 class="mb-2 text-xl font-medium leading-tight text-black text-center mt-4">
+                                Little Known Ways To Rid YourSelf
+                            </h5>
+                            <p class="mb-4 text-center text-base text-black">
+                                June 20,2021
+                            </p>
+                            <hr />
+                            <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+                                <img class="rounded-t-lg" src="images/17 2.png" alt="" />
+                            </a>
+                            <div class="p-6">
+
+                                <p class="mb-4 text-center text-base text-black">
+                                    Special cloth alert. Fan luv. Celebrate success right, the only way, apple. Give
+                                    thanks
+                                    to
+                                    the most high. In life there will be road blocks but we will over come...
+                                </p>
+                                <div class="flex justify-center">
+                                    <button class="text-black tracking-wider border border-x-yellow-200 p-2">
+                                        <p>Read More</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="mt-20 bg-[#E7F2ED]">
+        <p class="text-center text-4xl p-7">Contact Us</p>
+        <div class="flex justify-center gap-9 mt-12">
+            <div class="">
+                <div>
+                    <input type="text" class="border p-2 border-black" placeholder="First Name" style="width: 25rem;">
+                </div>
+                <div>
+                    <input type="text" class="border p-2 border-black mt-9" placeholder="Last Name  "
+                        style="width: 25rem;">
+                </div>
+                <div>
+                    <input type="text" class="border p-2 border-black mt-9" placeholder="Email" style="width: 25rem;">
+                </div>
+                <div class="mt-9">
+                    <label for="comments">Comments</label>
+                    <div>
+                        <input type="text" class="border border-black " id="comments"
+                            style="width: 25rem; height: 13rem;">
+                    </div>
+                </div>
+                <div>
+                    <button class="p-2 border border-zinc-700 mt-4 tracking-wider">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+            <div class="dragSection">
+                <label for="upload" class="text-2xl">Upload File</label>
+                <div class="boxSection p-40 flex flex-col">
+                    <span class="material-symbols-outlined text-center">
+                        cloud_upload
+                    </span>
+                    <p>Drag your files here</p>
+                    <p class="text-center">or</p>
+                    <button class="mt-4 border tracking-wider">Browse File</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq section -->
+    <h1 class="text-center text-5xl mt-20">FAQ</h1>
+    <section class="mt-10 flex justify-center">
+        <!-- drop section -->
+        <div id="accordionExample" style="width: 70rem;">
+            <div class="rounded-t-lg border border-[#0B8497] bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                <h2 class="mb-0" id="headingOne">
+                    <button
+                        class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <p class="text-2xl">Lorem ipsum dolor sit amet</p>
+                        <span
+                            class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="!visible" data-te-collapse-item data-te-collapse-show
+                    aria-labelledby="headingOne" data-te-parent="#accordionExample">
+                    <div class="py-4 px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="border border-t-0 border-[#0B8497] bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                <h2 class="mb-0" id="headingTwo">
+                    <button
+                        class="group relative flex w-full items-center rounded-none border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <p class="text-2xl">Lorem ipsum dolor sit amet</p>
+                        <span
+                            class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+                    data-te-parent="#accordionExample">
+                    <div class="py-4 px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div
+                class="rounded-b-lg border border-t-0 border-[#0B8497] bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                <h2 class="accordion-header mb-0" id="headingThree">
+                    <button
+                        class="group relative flex w-full items-center border-0 bg-white py-4 px-5 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <p class="text-2xl">Lorem ipsum dolor sit amet</p>
+                        <span
+                            class="ml-auto -mr-1 h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree"
+                    data-te-parent="#accordionExample">
+                    <div class="py-4 px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dropend -->
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="flex justify-around mt-20">
+            <div>
+                <p><span class="font-extrabold">&copy;</span> 2022 Haus Gitschberg | Terms & Conditions | Privacy Policy</p>
+            </div>
+            <div class="socialSite flex gap-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <!-- end site -->
+</body>
+
+</html>
